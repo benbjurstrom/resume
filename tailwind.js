@@ -194,6 +194,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Libre Franklin',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -208,6 +209,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
+      'Libre Baskerville',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
@@ -250,15 +252,15 @@ module.exports = {
   */
 
   textSizes: {
-    'xs': '.75rem',     // 12px
-    'sm': '.875rem',    // 14px
-    'base': '1rem',     // 16px
-    'lg': '1.125rem',   // 18px
-    'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
+    'xs': '.75rem', // 12px
+    'sm': '.8rem', // 13px
+    'base': '1rem', // 16px
+    'lg': '1.125rem', // 18px
+    'xl': '1.25rem', // 20px
+    '2xl': '1.5rem', // 24px
+    '3xl': '1.875rem', // 30px
+    '4xl': '2.25rem', // 36px
+    '5xl': '3rem', // 48px
   },
 
 
@@ -303,7 +305,7 @@ module.exports = {
 
   leading: {
     'none': 1,
-    'tight': 1.25,
+    'tight': 1.35,
     'normal': 1.5,
     'loose': 2,
   },
@@ -419,7 +421,9 @@ module.exports = {
   |
   */
 
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: global.Object.assign({
+    default: colors['grey-light']
+  }, colors),
 
 
   /*

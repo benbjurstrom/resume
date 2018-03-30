@@ -5,7 +5,7 @@ const path = require('path')
 module.exports = {
   entry: './index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'styles.css',
   },
   module: {
@@ -27,6 +27,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
+      title: 'Ben Bjurstrom\'s Resume',
       template: 'src/views/template.html'
     }),
   ]

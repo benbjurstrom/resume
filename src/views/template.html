@@ -4,8 +4,46 @@
   <meta charset="utf-8">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Libre+Franklin" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 <body>
-  <%= require('html-loader!./header.html') %>
+  <div class="container mx-auto px-4 mt-4">
+    <section class="mb-8">
+      <%= require('html-loader!./header.html') %>
+    </section>
+    <div class="md:flex print:flex">
+      <div class="md:w-1/3 print:w-1/3">
+        <section class="pb-4 md:pr-4 print:pr-4">
+          <%= require('html-loader!./contact.html') %>
+        </section>
+        <section class="border-t-py-4 md:pr-4 print:pr-4">
+          <%= require('html-loader!./skills.html') %>
+        </section>
+        <section class="border-t-py-4 md:pr-4 print:pr-4">
+          <%= require('html-loader!./education.html') %>
+        </section>
+        <section class="border-t-py-4 md:pr-4 print:pr-4 md:pb-0">
+          <%= require('html-loader!./memberships.html') %>
+        </section>
+      </div>
+      <div class="border-grey-darker border-t pt-4 md:right-column print:right-column">
+        <section>
+          <h2 class="section">
+            Experience
+          </h2>
+          <div>
+            <%= require('html-loader!./experience/contract-services.html') %>
+          </div>
+          <div>
+            <%= require('html-loader!./experience/fancloud.html') %>
+          </div>
+          <div>
+            <%= require('html-loader!./experience/bank-of-america.html') %>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

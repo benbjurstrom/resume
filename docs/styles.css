@@ -610,6 +610,34 @@ button,
   cursor: pointer;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
@@ -2398,11 +2426,11 @@ button,
 }
 
 .font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Libre Franklin, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-serif {
-  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  font-family: Libre Baskerville, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
 }
 
 .font-mono {
@@ -2554,7 +2582,7 @@ button,
 }
 
 .leading-tight {
-  line-height: 1.25;
+  line-height: 1.35;
 }
 
 .leading-normal {
@@ -4160,7 +4188,7 @@ button,
 }
 
 .text-sm {
-  font-size: .875rem;
+  font-size: .8rem;
 }
 
 .text-base {
@@ -4507,6 +4535,85 @@ button,
 
 .z-auto {
   z-index: auto;
+}
+
+body {
+  color: #22292f;
+}
+
+a {
+  color: #22292f !important;
+  text-decoration: none !important;
+}
+
+p {
+  font-size: .8rem;
+}
+
+.section {
+  font-size: 1.5rem;
+  font-family: Libre Baskerville, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  padding-bottom: 1rem;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  font-variant: small-caps;
+}
+
+.paragraph {
+  font-size: .8rem;
+  line-height: 1.35;
+  margin-bottom: .5rem;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.icon-text {
+  margin-left: .25rem;
+  align-self: center;
+  font-size: .8rem;
+}
+
+.border-t-py-4 {
+  border-color: #606f7b;
+  border-top-width: 1px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.right-column {
+  padding-top: 0;
+  border-top-width: 0;
+  border-left-width: 1px;
+  width: 66.66667%;
+  padding-left: 1rem;
+}
+
+@media print {
+  .print\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .print\:flex {
+    display: flex;
+  }
+
+  .print\:pr-4 {
+    padding-right: 1rem;
+  }
+
+  .print\:w-1\/3 {
+    width: 33.33333%;
+  }
+
+  .print\:right-column {
+    padding-top: 0;
+    border-top-width: 0;
+    border-left-width: 1px;
+    width: 66.66667%;
+    padding-left: 1rem;
+  }
 }
 
 @media (min-width: 576px) {
@@ -6298,11 +6405,11 @@ button,
   }
 
   .sm\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Libre Franklin, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Libre Baskerville, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .sm\:font-mono {
@@ -6454,7 +6561,7 @@ button,
   }
 
   .sm\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.35;
   }
 
   .sm\:leading-normal {
@@ -8052,7 +8159,7 @@ button,
   }
 
   .sm\:text-sm {
-    font-size: .875rem;
+    font-size: .8rem;
   }
 
   .sm\:text-base {
@@ -8399,6 +8506,14 @@ button,
 
   .sm\:z-auto {
     z-index: auto;
+  }
+
+  .sm\:right-column {
+    padding-top: 0;
+    border-top-width: 0;
+    border-left-width: 1px;
+    width: 66.66667%;
+    padding-left: 1rem;
   }
 }
 
@@ -10191,11 +10306,11 @@ button,
   }
 
   .md\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Libre Franklin, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Libre Baskerville, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .md\:font-mono {
@@ -10347,7 +10462,7 @@ button,
   }
 
   .md\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.35;
   }
 
   .md\:leading-normal {
@@ -11945,7 +12060,7 @@ button,
   }
 
   .md\:text-sm {
-    font-size: .875rem;
+    font-size: .8rem;
   }
 
   .md\:text-base {
@@ -12292,6 +12407,14 @@ button,
 
   .md\:z-auto {
     z-index: auto;
+  }
+
+  .md\:right-column {
+    padding-top: 0;
+    border-top-width: 0;
+    border-left-width: 1px;
+    width: 66.66667%;
+    padding-left: 1rem;
   }
 }
 
@@ -14084,11 +14207,11 @@ button,
   }
 
   .lg\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Libre Franklin, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Libre Baskerville, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .lg\:font-mono {
@@ -14240,7 +14363,7 @@ button,
   }
 
   .lg\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.35;
   }
 
   .lg\:leading-normal {
@@ -15838,7 +15961,7 @@ button,
   }
 
   .lg\:text-sm {
-    font-size: .875rem;
+    font-size: .8rem;
   }
 
   .lg\:text-base {
@@ -16185,6 +16308,14 @@ button,
 
   .lg\:z-auto {
     z-index: auto;
+  }
+
+  .lg\:right-column {
+    padding-top: 0;
+    border-top-width: 0;
+    border-left-width: 1px;
+    width: 66.66667%;
+    padding-left: 1rem;
   }
 }
 
@@ -17977,11 +18108,11 @@ button,
   }
 
   .xl\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Libre Franklin, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Libre Baskerville, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .xl\:font-mono {
@@ -18133,7 +18264,7 @@ button,
   }
 
   .xl\:leading-tight {
-    line-height: 1.25;
+    line-height: 1.35;
   }
 
   .xl\:leading-normal {
@@ -19731,7 +19862,7 @@ button,
   }
 
   .xl\:text-sm {
-    font-size: .875rem;
+    font-size: .8rem;
   }
 
   .xl\:text-base {
@@ -20078,5 +20209,13 @@ button,
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:right-column {
+    padding-top: 0;
+    border-top-width: 0;
+    border-left-width: 1px;
+    width: 66.66667%;
+    padding-left: 1rem;
   }
 }
