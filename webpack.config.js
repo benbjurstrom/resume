@@ -27,8 +27,13 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
-      title: 'Ben Bjurstrom\'s Resume',
+      title: 'Ben Bjurstrom - Resume',
       template: 'src/views/template.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Ben Bjurstrom - Cover Letter',
+      filename: 'cover-letter.html',
+      template: 'src/views/cover-letter.html'
     }),
   ]
 }
